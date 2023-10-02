@@ -35,7 +35,7 @@ const Result = ({ data }) => {
 
 
   return (
-    <Stack>
+    <Stack  my={4} gap={3}>
       <Typography textAlign={"center"} variant='h5'>Monthly Payment : ${monthlypayment.toFixed(2)}</Typography>
       <Stack direction={"row"} justifyContent={"center"}>
         <div>

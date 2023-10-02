@@ -26,10 +26,10 @@ function App() {
     <div className="App">
 
       <Navbar />
-      <Container maxWidth="xl" sx={{ mt: 4 }}>
+      <Container maxWidth="md" sx={{ mt: 4 }}>
         <Grid container spacing={5} alignItems={"center"}>
           <Grid item xs ={12} md={6}>
-            {/* <Selectbar data={data} setData={setData} /> */}
+            <Selectbar data={data} setData={setData} />
             <Tenurebar data={data} setData={setData}/>
           </Grid>
           <Grid item xs ={12} md={6}>

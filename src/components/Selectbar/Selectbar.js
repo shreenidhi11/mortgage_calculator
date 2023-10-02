@@ -26,37 +26,37 @@ const Selectbar = ({ data, setData }) => {
                 
 
             />
-            {/* <SliderComponent min={100} max={props.data.homeValue} defaultValue={props.data.downPayment} steps={100}
-                onChange={(e, value) => props.setData({
-                    ...props.data,
+            <SliderComponent min={100} max={data.homeValue} defaultValue={data.downPayment} steps={100}
+                onChange={(e, value) => setData({
+                    ...data,
                     downPayment: value,
                 })}
                 label="Down Payment"
                 unit="$"
-                amount={props.data.downPayment}
-                value = {props.data.downPayment}
-            /> */}
-            {/* <SliderComponent min={0} max={props.data.homeValue} defaultValue={props.data.loanAmount} steps={5}
-                onChange={(e, value) => props.setData({
-                    ...props.data,
+                amount={data.downPayment}
+                value = {data.downPayment}
+            />
+            <SliderComponent min={0} max={data.homeValue} defaultValue={data.loanAmount} steps={5}
+                onChange={(e, value) => setData({
+                    ...data,
                     loanAmount: value,
                 }) }
                 label="Loan Amount"
                 unit="$"
-                amount={props.data.loanAmount}
-                value={props.data.loanAmount}
-            /> */}
+                amount={data.loanAmount}
+                value={data.loanAmount}
+            />
 
-            {/* <SliderComponent min={2} max={18} defaultValue={props.data.interestRate} steps={1}
-                onChange={(e, value) => props.setData({
-                    ...props.data,
+            <SliderComponent min={2} max={18} defaultValue={data.interestRate} steps={1}
+                onChange={(e, value) => setData({
+                    ...data,
                     loanTerm: value,
                 }) }
                 label="Interest rate"
                 unit="%"
-                amount={props.data.interestRate}
-                value={props.data.interestRate}
-            /> */}
+                amount={data.interestRate}
+                value={data.interestRate}
+            />
         </>
 
     )
