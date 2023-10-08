@@ -2,8 +2,8 @@ import React from 'react'
 import Slider from '@mui/material/Slider';
 import { Stack, Typography } from '@mui/material';
 
-const SliderComponent = ({ label, unit, amount, defaultValue, min, max, step, onChange, value }) => {
-    console.log(label, unit, amount, defaultValue, min, max, step, onChange, value)
+const SliderComponent = ({ label, unit, amount, defaultValue, min, max, steps, onChange, value }) => {
+    console.log(label, unit, amount, defaultValue, min, max, steps, onChange, value)
     return (
         
         <Stack my={1.4}>
@@ -19,7 +19,7 @@ const SliderComponent = ({ label, unit, amount, defaultValue, min, max, step, on
                 aria-label="Default"
                 valueLabelDisplay="auto"
                 marks
-                step={step}
+                step={steps}
                 onChange={onChange}
                 value={value}
             />
